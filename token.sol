@@ -8,7 +8,7 @@ contract Token {
     mapping(address => mapping(address => uint)) public allowance;
     
     
-    uint public totalSupply = 1000000 * 10 ** 8;
+    uint public totalSupply = 100000000 * 10 ** 8;
     string public name = "DataBind Coin";
     string public symbol = "DATB";
     uint public decimals = 8;
@@ -21,7 +21,7 @@ contract Token {
     
     constructor() {
     
-         balances[msg.sender] = totalSupply;
+        balances[msg.sender] = totalSupply;
 
     }
 
